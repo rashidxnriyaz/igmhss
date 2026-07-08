@@ -4,90 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imam Gazzali Matric Higher Secondary School | Lalpet</title>
-    <meta name="description" content="Imam Gazzali Matric Higher Secondary School, Lalpet. Delivering excellence in education from Nursery to Class XII since 1990.">
+    <meta name="description" content="Imam Gazzali Matric Higher Secondary School, Lalpet. Excellence in Education from Nursery to Higher Secondary serving the Cuddalore district since 1990.">
     
-    <!-- Tailwind CSS for modern, clean layout utility -->
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+    <!-- Google Fonts for professional typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
-    <!-- Header / Navigation -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+    <!-- Tailwind CSS Engine for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-[#fafafa] text-gray-800 font-sans antialiased">
+
+    <!-- Navigation Bar -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <span class="font-bold text-xl tracking-tight text-emerald-800">Imam Gazzali School</span>
+                <div class="w-10 h-10 bg-emerald-800 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-sm">
+                    IG
+                </div>
+                <div>
+                    <span class="font-extrabold text-lg tracking-tight text-emerald-900 block leading-none">IMAM GAZZALI</span>
+                    <span class="text-[11px] uppercase tracking-wider text-amber-600 font-bold">Matric Higher Secondary School</span>
+                </div>
             </div>
-            <nav class="hidden md:flex space-x-8 font-medium text-gray-600">
-                <a href="#about" class="hover:text-emerald-700 transition">About Us</a>
-                <a href="#academics" class="hover:text-emerald-700 transition">Academics</a>
-                <a href="#admissions" class="hover:text-emerald-700 transition">Admissions</a>
-                <a href="#contact" class="hover:text-emerald-700 transition">Contact</a>
+            <nav class="hidden md:flex space-x-8 font-semibold text-sm text-gray-600">
+                <a href="#about" class="hover:text-emerald-800 transition-colors">About</a>
+                <a href="#academics" class="hover:text-emerald-800 transition-colors">Academics</a>
+                <a href="#admissions" class="hover:text-emerald-800 transition-colors">Admissions</a>
+                <a href="#contact" class="hover:text-emerald-800 transition-colors">Contact</a>
             </nav>
+            <div class="md:hidden">
+                <!-- Mobile Menu Button -->
+                <button class="text-gray-600 focus:outline-none" aria-label="Toggle Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative bg-emerald-900 text-white py-24 px-6 text-center overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <!-- Premium Hero Section -->
+    <section class="relative bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-950 text-white py-28 px-6 text-center overflow-hidden">
+        <!-- Subtle architectural pattern background -->
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        
         <div class="relative max-w-4xl mx-auto">
-            <span class="inline-block bg-emerald-700 text-emerald-100 text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-4">
-                Established 1990
-            </span>
-            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-white">
-                Imam Gazzali Matric Higher Secondary School
+            <div class="inline-flex items-center space-x-2 bg-emerald-800/40 backdrop-blur-sm border border-emerald-700/50 text-emerald-200 text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
+                <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                <span>Established 1990 — Lalpet</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 text-white leading-tight">
+                Imam Gazzali Matric <br class="hidden md:block">Higher Secondary School
             </h1>
-            <p class="text-xl md:text-2xl text-emerald-200 font-light max-w-2xl mx-auto">
+            
+            <p class="text-xl md:text-2xl text-emerald-100 font-medium max-w-3xl mx-auto border-t border-emerald-800/60 pt-6">
                 Excellence in Education — Nursery to Higher Secondary
             </p>
-            <div class="mt-8">
-                <a href="#admissions" class="inline-block bg-amber-500 hover:bg-amber-400 text-gray-950 font-bold px-8 py-3 rounded-lg shadow-lg transition transform hover:-translate-y-0.5">
+            
+            <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#admissions" class="w-full sm:w-auto inline-block bg-amber-500 hover:bg-amber-400 text-gray-950 font-bold px-8 py-3.5 rounded-xl shadow-xl shadow-emerald-950/20 transition-all transform hover:-translate-y-0.5 text-center">
                     Admissions Open
+                </a>
+                <a href="#about" class="w-full sm:w-auto inline-block bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-3.5 rounded-xl transition-all text-center">
+                    Learn More
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Core Message & Overview Section -->
-    <section id="about" class="py-16 px-6 max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Nurturing Tomorrow's Leaders Today</h2>
-        <p class="text-lg text-gray-600 leading-relaxed mb-6">
-            For over three decades, Imam Gazzali School has been a cornerstone of academic growth in the Cuddalore district. We blend rigorous academic standards with strong character building to ensure every student thrives from their early childhood steps right up to university preparation.
+    <!-- Core Message Section -->
+    <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 tracking-tight">
+            Nurturing Academic & Moral Growth
+        </h2>
+        <div class="w-16 h-1 bg-amber-500 mx-auto mb-8 rounded-full"></div>
+        <p class="text-lg text-gray-600 leading-relaxed font-normal mb-8">
+            For over three decades, Imam Gazzali School has been a trusted cornerstone of education within the Cuddalore district. We blend exceptional intellectual discovery with intentional personal growth, supporting your child every step of the way—from initial childhood milestones straight through secondary graduation and into higher learning.
         </p>
-        <p class="text-base text-gray-500 italic">
-            Operating fluidly across our integrated kindergarten, primary, and higher secondary wings, we provide a continuous, unified journey for your child's education.
+        <p class="text-sm text-gray-400 max-w-xl mx-auto italic border-l-2 border-gray-200 pl-4 text-left md:text-center">
+            To best serve our families, our educational ecosystem smoothly spans kindergarten, primary, and higher secondary wings to provide a secure and unified academic track.
         </p>
     </section>
 
-    <!-- Quick Stats Grid -->
-    <section class="bg-white border-y border-gray-200 py-12 px-6">
-        <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-                <p class="text-4xl font-extrabold text-emerald-800 mb-1">35+</p>
-                <p class="text-sm uppercase tracking-wider text-gray-500 font-medium">Years Experience</p>
+    <!-- Fact Metrics Grid -->
+    <section class="bg-white border-y border-gray-100 py-16 px-6 shadow-sm">
+        <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center">
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-100">
+                <p class="text-4xl font-black text-emerald-800 mb-1">35+</p>
+                <p class="text-xs uppercase tracking-wider text-gray-500 font-bold">Years of Trust</p>
             </div>
-            <div>
-                <p class="text-4xl font-extrabold text-emerald-800 mb-1">K-12</p>
-                <p class="text-sm uppercase tracking-wider text-gray-500 font-medium">Complete Schooling</p>
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-100">
+                <p class="text-4xl font-black text-emerald-800 mb-1">K-12</p>
+                <p class="text-xs uppercase tracking-wider text-gray-500 font-bold">Complete Journey</p>
             </div>
-            <div>
-                <p class="text-4xl font-extrabold text-emerald-800 mb-1">100%</p>
-                <p class="text-sm uppercase tracking-wider text-gray-500 font-medium">Board Success</p>
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-100">
+                <p class="text-4xl font-black text-emerald-800 mb-1">100%</p>
+                <p class="text-xs uppercase tracking-wider text-gray-500 font-bold">Board Success</p>
             </div>
-            <div>
-                <p class="text-4xl font-extrabold text-emerald-800 mb-1">Lalpet</p>
-                <p class="text-sm uppercase tracking-wider text-gray-500 font-medium">Cuddalore District</p>
+            <div class="p-4 bg-gray-50 rounded-2xl border border-gray-100">
+                <p class="text-4xl font-black text-emerald-800 mb-1">Cud</p>
+                <p class="text-xs uppercase tracking-wider text-gray-500 font-bold">District Presence</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact" class="bg-gray-950 text-gray-400 py-12 px-6 border-t border-gray-900">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="text-center md:text-left">
-                <p class="text-white font-semibold text-lg">Imam Gazzali Matric Higher Secondary School</p>
-                <p class="text-sm mt-1">Lalpet, Cuddalore District, Tamil Nadu</p>
+    <!-- Academics Highlight -->
+    <section id="academics" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">Our Framework</h2>
+            <p class="text-gray-500 mt-2">A curriculum designed to scale with your child's capabilities.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-800 font-bold text-xl mb-6">01</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Foundational Years</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Emphasizing curiosity, communication, and cognitive motor-skills during vital early sensory development cycles.</p>
             </div>
-            <p class="text-xs">&copy; 2026 Imam Gazzali School. All rights reserved.</p>
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-700 font-bold text-xl mb-6">02</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Primary & Secondary</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Building deep competencies across core mathematical, scientific, language, and social curricula parameters.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-teal-800 font-bold text-xl mb-6">03</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Higher Secondary</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Rigorous streaming tracks directly mapped toward public examination readiness and modern competitive university placement benchmarks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer id="contact" class="bg-gray-950 text-gray-400 py-16 px-6 border-t border-gray-900">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-b border-gray-900 pb-12">
+            <div>
+                <p class="text-white font-bold text-xl tracking-wide">Imam Gazzali Matric Higher Secondary School</p>
+                <p class="text-sm mt-2 text-gray-400">Lalpet, Cuddalore District, Tamil Nadu, India</p>
+            </div>
+            <div class="flex flex-wrap gap-6 text-sm font-medium">
+                <a href="#about" class="hover:text-white transition-colors">About Us</a>
+                <a href="#academics" class="hover:text-white transition-colors">Curriculum</a>
+                <a href="#admissions" class="hover:text-white transition-colors">Admissions Portal</a>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+            <p>&copy; 2026 Imam Gazzali School. All rights reserved.</p>
+            <p class="tracking-wide">Excellence in Education</p>
         </div>
     </footer>
 
